@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             x:Class="TicTacToeClient.MainPage"
+             Title="Kółko i Krzyżyk">
+    <Grid Padding="20" RowSpacing="5" ColumnSpacing="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="StatusLabel" FontSize="24" HorizontalOptions="Center" Margin="0,10"/>
+
+        <Grid x:Name="GameGrid" Grid.Row="1" ColumnSpacing="5" RowSpacing="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </Grid>
+</ContentPage>
